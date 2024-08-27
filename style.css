@@ -1,0 +1,60 @@
+.header-background  {
+    background-color: #4CAF50;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas si es necesario */
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 10px 15px; /* Espacio entre los enlaces */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4CAF50; /* Verde de fondo para los enlaces */
+    padding: 10px 20px; /* Espaciado dentro de los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    display: block;
+    text-align: center; /* Asegura que el texto esté centrado en enlaces más grandes */
+}
+
+nav ul li a:hover {
+    background-color: #45a049; /* Color al pasar el cursor por encima */
+}
+
+section ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+section ul li {
+    background-color: #4CAF50; /* Fondo verde para los elementos de la lista */
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word; /* Permite que el texto largo se ajuste en dispositivos pequeños */
+}
+
+/* Asegura que el contenido se adapte bien en pantallas pequeñas */
+main, header, footer, nav {
+    padding: 0 10px;
+    max-width: 100%;
+    text-align: center;
+}
