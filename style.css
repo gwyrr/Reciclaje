@@ -1,84 +1,70 @@
-.header-background {
-    background-color: green; /* Fondo verde para todo el encabezado */
-    width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
-}
-.header-container {
-    display: flex;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3;
+    margin: 0;
     padding: 0;
-    align-items: center;
-    justify-content: center; 
-    flex-wrap: wrap;
-    width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
-    margin: 0 auto;
 }
 
 #logo {
-    display: flex;
-    width: 50px; 
-    height: auto; 
-    margin-right: 5px;
-    margin-left: 5px; 
+    width: 50px;
+    height: 50px;
 }
 
-h1 {
-    color: #ffffff;
-    margin: 0;
-    flex: 1; /* Ocupa el espacio restante a la derecha del logo */
-    text-align: center;
-    /* text-align: left;  */
+#primera {
+    width: 150px;
+    height: 150px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+#segunda {
+    width: 150px;
+    height: 150px;
+}
+#tercera {
+    width: 150px;
+    height: 150px;
+}
+#cuarta {
+    width: 150px;
+    height: 150px;
 }
 
-
-nav ul {
-    display: flex;
-    justify-content: center; /* Centra los enlaces horizontalmente */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas si es necesario */
-    padding: 0;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin: 10px 15px; /* Espacio entre los enlaces */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #4CAF50; /* Verde de fondo para los enlaces */
-    padding: 10px 20px; /* Espaciado dentro de los enlaces */
-    border-radius: 5px; /* Bordes redondeados */
-    display: block;
-    text-align: center; /* Asegura que el texto esté centrado en enlaces más grandes */
-}
-
-nav ul li a:hover {
-    background-color: #45a049; /* Color al pasar el cursor por encima */
-}
-
-section ul {
-    padding: 0;
-    list-style-type: none;
-    margin: 0;
-}
-
-section ul li {
-    background-color: #4CAF50; /* Fondo verde para los elementos de la lista */
+.header {
+    background-color: #008000;
     color: white;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    word-wrap: break-word; /* Permite que el texto largo se ajuste en dispositivos pequeños */
-}
-
-/* Asegura que el contenido se adapte bien en pantallas pequeñas */
-main, footer, nav {
-    padding: 0 10px;
-    max-width: 100%;
     text-align: center;
+    padding: 20px;
+}
+.nav {
+    background-color: #008000;
+    overflow: hidden;
+}
+.nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: #006400;
+}
+.content {
+    padding: 20px;
+}
+.section {
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.section img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+.section:nth-child(even) img {
+    order: 2;
+    margin-right: 0;
+    margin-left: 20px;
 }
